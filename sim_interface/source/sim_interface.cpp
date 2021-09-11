@@ -8,6 +8,16 @@
 
 #include <sstream>
 
+struct item_upgrade_candidate {
+    double dps_diff;
+    std::string displayString;
+
+    bool operator < (const item_upgrade_candidate& testItem) const {
+        //operator works in reverse, so that we sort backwards by dps difference
+        return (dps_diff > testItem.dps_diff);
+    }    
+};
+
 void item_upgrades(std::string& item_strengths_string, Character character_new, Item_optimizer& item_optimizer,
                    Armory& armory, std::vector<size_t> batches_per_iteration,
                    std::vector<size_t> cumulative_simulations, Combat_simulator& simulator, double dps_mean,
@@ -64,6 +74,8 @@ void item_upgrades(std::string& item_strengths_string, Character character_new, 
     std::string best_armor_name{};
     bool found_upgrade = false;
     std::string item_downgrades_string{};
+    std::string this_item_strengths_string{};
+    std::vector<item_upgrade_candidate> item_upgrade_candidates;
     for (size_t i = 0; i < items.size(); i++)
     {
         armory.change_armor(character_new.armor, items[i], first_item);
@@ -79,9 +91,11 @@ void item_upgrades(std::string& item_strengths_string, Character character_new, 
                 found_upgrade = true;
                 double dps_increase = simulator.get_dps_mean() - dps_mean;
                 double dps_increase_std = Statistics::add_standard_deviations(sample_std, dps_sample_std);
-                item_strengths_string += "<br><b>Up</b>grade: <b>" + items[i].name + "</b> ( +<b>" +
+                this_item_strengths_string = "<br><b>Up</b>grade: <b>" + items[i].name + "</b> ( +<b>" +
                                          String_helpers::string_with_precision(dps_increase, 2) + " &plusmn " +
                                          String_helpers::string_with_precision(dps_increase_std, 2) + "</b> DPS).";
+                item_upgrade_candidate this_item_upgrade_candidate = { dps_increase, this_item_strengths_string};
+                item_upgrade_candidates.push_back(this_item_upgrade_candidate);
                 break;
             }
             else if (simulator.get_dps_mean() + sample_std * quantile <= dps_mean &&
@@ -89,29 +103,35 @@ void item_upgrades(std::string& item_strengths_string, Character character_new, 
             {
                 double dps_decrease = simulator.get_dps_mean() - dps_mean;
                 double dps_decrease_std = Statistics::add_standard_deviations(sample_std, dps_sample_std);
-                item_downgrades_string += "<br><b>Down</b>grade: <b>" + items[i].name + "</b> ( <b>" +
+                this_item_strengths_string = "<br><b>Down</b>grade: <b>" + items[i].name + "</b> ( <b>" +
                                           String_helpers::string_with_precision(dps_decrease, 3) + " &plusmn " +
                                           String_helpers::string_with_precision(dps_decrease_std, 2) + "</b> DPS).";
                 if (String_helpers::does_vector_contain(stronger_indexies, i))
                 {
                     found_upgrade = true;
-                    item_downgrades_string += " Note: Similar item stats, difficult to draw conclusions.";
+                    this_item_strengths_string += " Note: Similar item stats, difficult to draw conclusions.";
                 }
+                item_upgrade_candidate this_item_upgrade_candidate = { dps_decrease, this_item_strengths_string};
+                item_upgrade_candidates.push_back(this_item_upgrade_candidate);
                 break;
             }
         }
     }
+
+    //sort the vector by dps difference
+    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end());
+
+    //add BiS note   
     if (!found_upgrade)
     {
         item_strengths_string += " is <b>BiS</b> in current configuration!";
-        item_strengths_string += item_downgrades_string;
-        item_strengths_string += "<br><br>";
     }
-    else
-    {
-        item_strengths_string += item_downgrades_string;
-        item_strengths_string += "<br><br>";
+
+    //add all the lines for upgrades/downgrades, from the sorted vector
+    for(std::vector<item_upgrade_candidate>::size_type i = 0; i != item_upgrade_candidates.size(); i++) {
+        item_strengths_string += item_upgrade_candidates[i].displayString;
     }
+    item_strengths_string += "<br><br>";
 }
 
 void item_upgrades_wep(std::string& item_strengths_string, Character character_new, Item_optimizer& item_optimizer,
@@ -148,6 +168,8 @@ void item_upgrades_wep(std::string& item_strengths_string, Character character_n
     std::string best_armor_name{};
     bool found_upgrade = false;
     std::string item_downgrades_string{};
+    std::string this_item_strengths_string{};
+    std::vector<item_upgrade_candidate> item_upgrade_candidates;
     for (auto& item : items)
     {
         armory.change_weapon(character_new.weapons, item, socket);
@@ -163,9 +185,11 @@ void item_upgrades_wep(std::string& item_strengths_string, Character character_n
                 found_upgrade = true;
                 double dps_increase = simulator.get_dps_mean() - dps_mean;
                 double dps_increase_std = Statistics::add_standard_deviations(sample_std, dps_sample_std);
-                item_strengths_string += "<br><b>Up</b>grade: <b>" + item.name + "</b> ( +<b>" +
+                this_item_strengths_string = "<br><b>Up</b>grade: <b>" + item.name + "</b> ( +<b>" +
                                          String_helpers::string_with_precision(dps_increase, 3) + " &plusmn " +
                                          String_helpers::string_with_precision(dps_increase_std, 2) + "</b> DPS).";
+                item_upgrade_candidate this_item_upgrade_candidate = { dps_increase, this_item_strengths_string};
+                item_upgrade_candidates.push_back(this_item_upgrade_candidate);                
                 break;
             }
             else if (simulator.get_dps_mean() + sample_std * quantile <= dps_mean &&
@@ -173,24 +197,30 @@ void item_upgrades_wep(std::string& item_strengths_string, Character character_n
             {
                 double dps_decrease = simulator.get_dps_mean() - dps_mean;
                 double dps_decrease_std = Statistics::add_standard_deviations(sample_std, dps_sample_std);
-                item_downgrades_string += "<br><b>Down</b>grade: <b>" + item.name + "</b> ( <b>" +
+                this_item_strengths_string = "<br><b>Down</b>grade: <b>" + item.name + "</b> ( <b>" +
                                           String_helpers::string_with_precision(dps_decrease, 3) + " &plusmn " +
                                           String_helpers::string_with_precision(dps_decrease_std, 2) + "</b> DPS).";
+                item_upgrade_candidate this_item_upgrade_candidate = { dps_decrease, this_item_strengths_string};
+                item_upgrade_candidates.push_back(this_item_upgrade_candidate);
                 break;
             }
         }
     }
+
+    //sort the vector by dps difference
+    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end());
+
+    //add BiS note
     if (!found_upgrade)
     {
         item_strengths_string += " is <b>BiS</b> in current configuration!";
-        item_strengths_string += item_downgrades_string;
-        item_strengths_string += "<br><br>";
     }
-    else
-    {
-        item_strengths_string += item_downgrades_string;
-        item_strengths_string += "<br><br>";
+    
+    //add all the lines for upgrades/downgrades, from the sorted vector
+    for(std::vector<item_upgrade_candidate>::size_type i = 0; i != item_upgrade_candidates.size(); i++) {
+        item_strengths_string += item_upgrade_candidates[i].displayString;
     }
+    item_strengths_string += "<br><br>";
 }
 
 struct Stat_weight
