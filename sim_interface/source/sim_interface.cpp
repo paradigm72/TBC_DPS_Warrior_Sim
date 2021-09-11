@@ -13,9 +13,11 @@ struct item_upgrade_candidate {
     std::string displayString;
 
     bool operator < (const item_upgrade_candidate& testItem) const {
-        //operator works in reverse, so that we sort backwards by dps difference
+        return (dps_diff < testItem.dps_diff);
+    }
+    bool operator > (const item_upgrade_candidate& testItem) const {
         return (dps_diff > testItem.dps_diff);
-    }    
+    }     
 };
 
 void item_upgrades(std::string& item_strengths_string, Character character_new, Item_optimizer& item_optimizer,
@@ -119,7 +121,7 @@ void item_upgrades(std::string& item_strengths_string, Character character_new, 
     }
 
     //sort the vector by dps difference
-    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end());
+    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end(), std::greater <>());
 
     //add BiS note   
     if (!found_upgrade)
@@ -208,14 +210,14 @@ void item_upgrades_wep(std::string& item_strengths_string, Character character_n
     }
 
     //sort the vector by dps difference
-    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end());
+    std::sort(item_upgrade_candidates.begin(), item_upgrade_candidates.end(), std::greater <>());
 
     //add BiS note
     if (!found_upgrade)
     {
         item_strengths_string += " is <b>BiS</b> in current configuration!";
     }
-    
+
     //add all the lines for upgrades/downgrades, from the sorted vector
     for(std::vector<item_upgrade_candidate>::size_type i = 0; i != item_upgrade_candidates.size(); i++) {
         item_strengths_string += item_upgrade_candidates[i].displayString;
