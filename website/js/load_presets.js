@@ -64,18 +64,22 @@ function select_loadout_mult(selected_items, selected_weapons, selected_enchants
         }
     }
 
-    let select_option = document.getElementById(weapons_mult[0]);
-    console.log(select_option.options.length);
-    for (let option of select_option.options) {
-        for (let item of selected_weapons) {
-            if (option.value === item) {
-                option.selected = true;
-                break;
-            } else {
-                option.selected = false;
+    for (let i =0; i < weapons_mult.length; i++)
+    {
+        let select_option = document.getElementById(weapons_mult[i]);
+        console.log(select_option.options.length);
+        for (let option of select_option.options) {
+            for (let item of selected_weapons) {
+                if (option.value === item) {
+                    option.selected = true;
+                    break;
+                } else {
+                    option.selected = false;
+                }
             }
         }
     }
+    
     for (let i = 0; i < enchants.length; i++) {
         selectElement(enchants[i], selected_enchants[i])
     }
