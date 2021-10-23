@@ -316,8 +316,6 @@ function load_p2armsbisplatemult() {
     "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
-    unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
-                        unique_div(['two_hand_div'],['dual_wield_div']);
 }
 
 function load_p2armsbisleathermult() {
@@ -335,8 +333,6 @@ function load_p2armsbisleathermult() {
     "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
-    unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
-                        unique_div(['two_hand_div'],['dual_wield_div']);
 }
 
 function load_p2furybisplatemult() {
@@ -354,8 +350,6 @@ function load_p2furybisplatemult() {
     "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
-    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
-                        unique_div(['dual_wield_div'],['two_hand_div']);
 }
 
 function load_p2furybisleathermult() {
@@ -373,6 +367,4 @@ function load_p2furybisleathermult() {
     "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
-    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
-                        unique_div(['dual_wield_div'],['two_hand_div']);
 }
