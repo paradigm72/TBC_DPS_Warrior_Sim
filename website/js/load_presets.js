@@ -193,6 +193,44 @@ function load_p2armsbisleather() {
                         unique_div(['two_hand_div'],['dual_wield_div']);
 }
 
+function load_p2furybisplate() {
+    let selected_items = ["destroyer_battlehelm", "pendant_of_the_perilous", "destroyer_shoulderblades",
+        "vengeance_wrap", "destroyer_breastplate", "bladespire_warbands",
+        "destroyer_gauntlets", "belt_of_one_hundred_deaths", "leggings_of_murderous_intent",
+        "warboots_of_obliteration", "band_of_the_ranger_general", "ring_of_a_thousand_marks",
+        "dragonspine_trophy", "tsunami_talisman", "serpent_spine_longbow"];
+    let selected_weapons = ["dragonstrike", "talon_of_azshara"];
+    let selected_enchants = ["ferocity", "naxxramas", "+12 agility", "+6 stats", "+12 strength",
+        "+15 strength", "nethercobra", "cats_swiftness", "mongoose", "mongoose", "ring_1", "ring_2"];
+    let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
+    "+4 crit", "+8 crit", "+4 crit_+4_str", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
+    "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
+    load_talent_dual_wield_fury();
+    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
+                        unique_div(['dual_wield_div'],['two_hand_div']);
+}
+
+function load_p2furybisleather() {
+    let selected_items = ["destroyer_battlehelm", "pendant_of_the_perilous", "shoulderpads_of_the_stranger",
+        "vengeance_wrap", "destroyer_breastplate", "bracers_of_eradication",
+        "gloves_of_the_searing_grip", "belt_of_one_hundred_deaths", "leggings_of_murderous_intent",
+        "warboots_of_obliteration", "band_of_the_ranger_general", "ring_of_reciprocity",
+        "dragonspine_trophy", "tsunami_talisman", "serpent_spine_longbow"];
+    let selected_weapons = ["dragonstrike", "merciless_gladiators_slicer"];
+    let selected_enchants = ["ferocity", "naxxramas", "+12 agility", "+6 stats", "+12 strength",
+        "+15 strength", "nethercobra", "cats_swiftness", "mongoose", "mongoose", "ring_1", "ring_2"];
+    let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+4 crit_+4_str", "shoulder_gem2_dd","shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
+    "+8 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
+    "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
+    load_talent_dual_wield_fury();
+    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
+                        unique_div(['dual_wield_div'],['two_hand_div']);
+}
+
 function load_naxxgearmult() {
     let selected_items = ["lionheart_helm", "stormrages_talisman_of_seething", "conquerors_spaulders",
     "shroud_of_dominion", "plated_abomination_ribcage", "hive_defiler_wristguards",
@@ -295,4 +333,42 @@ function load_p2armsbisleathermult() {
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
                         unique_div(['two_hand_div'],['dual_wield_div']);
+}
+
+function load_p2furybisplatemult() {
+    let selected_items = ["destroyer_battlehelm", "pendant_of_the_perilous", "destroyer_shoulderblades",
+        "vengeance_wrap", "destroyer_breastplate", "bladespire_warbands",
+        "destroyer_gauntlets", "belt_of_one_hundred_deaths", "leggings_of_murderous_intent",
+        "warboots_of_obliteration", "band_of_the_ranger_general", "ring_of_a_thousand_marks",
+        "dragonspine_trophy", "tsunami_talisman", "serpent_spine_longbow"];
+    let selected_weapons = ["dragonstrike", "talon_of_azshara"];
+    let selected_enchants = ["ferocity", "naxxramas", "+12 agility", "+6 stats", "+12 strength",
+        "+15 strength", "nethercobra", "cats_swiftness", "mongoose", "mongoose", "ring_1", "ring_2"];
+    let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
+    "+4 crit", "+8 crit", "+4 crit_+4_str", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
+    "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
+    load_talent_dual_wield_fury();
+    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
+                        unique_div(['dual_wield_div'],['two_hand_div']);
+}
+
+function load_p2furybisleathermult() {
+    let selected_items = ["destroyer_battlehelm", "pendant_of_the_perilous", "shoulderpads_of_the_stranger",
+        "vengeance_wrap", "destroyer_breastplate", "bracers_of_eradication",
+        "gloves_of_the_searing_grip", "belt_of_one_hundred_deaths", "leggings_of_murderous_intent",
+        "warboots_of_obliteration", "band_of_the_ranger_general", "ring_of_reciprocity",
+        "dragonspine_trophy", "tsunami_talisman", "serpent_spine_longbow"];
+    let selected_weapons = ["dragonstrike", "merciless_gladiators_slicer"];
+    let selected_enchants = ["ferocity", "naxxramas", "+12 agility", "+6 stats", "+12 strength",
+        "+15 strength", "nethercobra", "cats_swiftness", "mongoose", "mongoose", "ring_1", "ring_2"];
+    let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+4 crit_+4_str", "shoulder_gem2_dd","shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
+    "+8 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
+    "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
+    load_talent_dual_wield_fury();
+    unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
+                        unique_div(['dual_wield_div'],['two_hand_div']);
 }
