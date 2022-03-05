@@ -118,15 +118,27 @@
     <div class="content">
         <div id="armor_single">
             <p class="select-title">Quick-select:</p><br>
-            <button onclick="load_naxxgear()">Naxx gear</button>
-            <button onclick="load_preraidbis()">Babyhoof's Preraid "BiS"</button>
-            <button onclick="load_p1armsbis()">Babyhoof's P1 Arms BiS</button>
-            <button onclick="load_p1furybis()">Babyhoof's P1 Fury BiS</button>
-            <button onclick="load_p2armsbisplate()">Babyhoof's P2 Arms Plate BiS</button>
-            <button onclick="load_p2armsbisleather()">Babyhoof's P2 Arms Leather BiS</button>
-            <button onclick="load_p2furybisplate()">Babyhoof's P2 Fury Plate BiS</button>
-            <button onclick="load_p2furybisleather()">Babyhoof's P2 Fury Leather BiS</button>
-            <br><br>
+            <select id="preset">
+                <option value="" selected></option>
+                <optgroup label="Phase 3"></optgroup>
+                <optgroup label="Phase 2">
+                    <option value="load_p2armsbisplate()">Babyhoof's P2 Arms Plate BiS</option>
+                    <option value="load_p2armsbisleather()">Babyhoof's P2 Arms Leather BiS</option>
+                    <option value="load_p2furybisplate()">Babyhoof's P2 Fury Plate BiS</option>
+                    <option value="load_p2furybisleather()">Babyhoof's P2 Fury Leather BiS</option>
+                </optgroup>
+                <optgroup label="Phase 1">
+                    <option value="load_p1armsbis()">Babyhoof's P1 Arms BiS</option>
+                    <option value="load_p1furybis()">Babyhoof's P1 Fury BiS</option>
+                </optgroup>
+                <optgroup label="Pre-Raid">
+                    <option value="load_preraidbis()"> Babyhoof's Preraid BiS</option>
+                    <option value="load_naxxgear()"> Naxx Gear</option>
+                </optgroup>
+            </select>
+            <button onclick="load_preset()">Apply Preset</button>
+            <br>
+            <br>
             <!--armor begin1-->
             <span class="left_select">helmet</span><span class="middle_select">neck</span><span class="right_select">shoulder</span><br>
             <select id="helmet_dd" class="item-select">
