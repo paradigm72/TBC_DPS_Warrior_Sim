@@ -5,3 +5,4 @@ node_modules
 website/emscripten/
 .vscode/
 /build
+*.DS_Store
