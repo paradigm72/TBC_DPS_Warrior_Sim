@@ -919,6 +919,11 @@ struct Armory
                 {"shard_of_azzinoth", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 64.0, 0, 0.0}, 1.9, 161, 242, Weapon_socket::one_hand, Weapon_type::dagger}, 
                 {"trackers_blade", Attributes{0.0, 0.0}, Special_stats{1.0416666666666667, 1.2682308180088777, 44.0, 0, 0.0}, 1.5, 105, 196, Weapon_socket::one_hand, Weapon_type::dagger}, 
                 {"boundless_agony", Attributes{0.0, 0.0}, Special_stats{1.0869565217391306, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 210}, 1.8, 144, 217, Weapon_socket::one_hand, Weapon_type::dagger}, 
+            
+                // Phase 4
+                {"dagger_of_bad_mojo", Attributes{0.0, 21.0}, Special_stats{0.0, 0.0, 40, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.8, 137, 207, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"prowlers_strikeblade", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 42, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.5, 100, 187, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"umbral_shiv", Attributes{0.0, 12.0}, Special_stats{0.0, 0.82, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.8, 137, 207, Weapon_socket::one_hand, Weapon_type::dagger}, 
             };
 
     std::vector<Weapon> maces_t
