@@ -1061,7 +1061,7 @@
         <br>
 
         <input type="checkbox" id="do_comparison"
-               onclick="unique_checkboxes('do_comparison', ['normal_mode']);>
+               onclick="unique_checkboxes('do_comparison', ['normal_mode']);">
         <label for="do_comparison"><b>Comparison</b>: Add a configuration file to compa
         re against</label>
         <div class="description" style="display:none" id="compare_div">
@@ -4593,6 +4593,9 @@
             }
         }
 
+        if (document.getElementById("two_hand_mode").checked) {
+            file_content += "two_hand_mode" + " " + "two_hand_mode" + "\n";
+        }
         file_content += "race_dd" + " " + race_string + "\n";
 
         let uriContent = "data:application/octet-stream," + encodeURIComponent(file_content);
