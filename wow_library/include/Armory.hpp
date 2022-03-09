@@ -776,6 +776,11 @@ struct Armory
                 // off_hand
                 {"warglaive_of_azzinoth_oh", Attributes{0.0, 21.0}, Special_stats{1.0416666666666667, 0.0, 44, 0, 0.0}, 1.4, 107, 199, Weapon_socket::off_hand, Weapon_type::sword, {}, Set::the_twin_blades_of_azzinoth},
                 {"warglaive_of_azzinoth_oh_non_demon", Attributes{0.0, 21.0}, Special_stats{1.0416666666666667, 0.0, 44, 0, 0.0}, 1.4, 107, 199, Weapon_socket::off_hand, Weapon_type::sword, {}, Set::the_twin_blades_of_azzinoth_non_demon},
+           
+                // Phase 4
+                // main_hand / one_hand
+                {"heartless", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 42.0, 0, 0.0127}, 2.6, 174, 323, Weapon_socket::one_hand, Weapon_type::sword}, 
+                {"akil_zons_talonblade", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 52.0, 0, 0.0114}, 1.5, 100, 187, Weapon_socket::one_hand, Weapon_type::sword}, 
            };
 
 
@@ -802,6 +807,10 @@ struct Armory
                 // Phase 3
                 {"cataclysms_edge", Attributes{75.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 335}, 3.5, 386, 580, Weapon_socket::two_hand, Weapon_type::sword},
                 {"vengeful_gladiators_greatsword", Attributes{46.0, 0.0}, Special_stats{2.083333333, 0.9511731135, 0.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 386, 580, Weapon_socket::two_hand, Weapon_type::sword}, 
+            
+                // Phase 4
+                {"jin-rokh_the_great_apocalypse", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 120.0, 0, 0.0285, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 3.7, 380, 570, Weapon_socket::two_hand, Weapon_type::sword},
+
             };
 
     std::vector<Weapon> two_handed_axes_polearm_t
