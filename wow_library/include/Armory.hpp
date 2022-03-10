@@ -183,7 +183,7 @@ struct Armory
                 {"vengeful_gladiators_plate_helm", Attributes{39.0, 0.0}, Special_stats{1.585144927536232, 0.7609384908053266, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 84}, Socket::head}, 
             
                 // Phase 4
-                {"amani_mask_of_death", Attributes{46.0, 0.0}, Special_stats{2.09, 0.0, 0.0, 0, 0.0}, Socket::head}, 
+                {"amani_mask_of_death", Attributes{46.0, 0.0}, Special_stats{0.0, 2.09, 0.0, 0, 0.0}, Socket::head}, 
             };
 
     std::vector<Armor> neck_t
@@ -458,7 +458,7 @@ struct Armory
                 {"vengeful_gladiators_plate_gauntlets", Attributes{37.0, 0.0}, Special_stats{1.4492753623188408, 0.0, 0.0, 0, 0.0}, Socket::hands}, 
             
                 // Phase 4
-                {"furious_deathgrips", Attributes{34.0, 0.0}, Special_stats{1.59, 0.0, 0.0, 0, 0.0}, Socket::hands}, 
+                {"furious_deathgrips", Attributes{34.0, 0.0}, Special_stats{0.0, 1.59, 0.0, 0, 0.0}, Socket::hands}, 
 
             };
 
@@ -570,7 +570,7 @@ struct Armory
                 {"vengeful_gladiators_plate_legguards", Attributes{51.0, 0.0}, Special_stats{2.1286231884057973, 0.7609384908053266, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 84}, Socket::legs}, 
             
                 // Phase 4
-                {"bloodthirsters_wargreaves", Attributes{46.0, 0.0}, Special_stats{2.41, 0.0, 0.0, 0, 0.0}, Socket::legs}, 
+                {"bloodthirsters_wargreaves", Attributes{46.0, 0.0}, Special_stats{0.0, 2.41, 0.0, 0, 0.0}, Socket::legs}, 
 
             };
 
