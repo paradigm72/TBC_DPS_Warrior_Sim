@@ -848,6 +848,9 @@ struct Armory
                 {"halberd_of_desolation", Attributes{0.0, 51.0}, Special_stats{0.0, 1.9023462270133165, 100.0, 0, 0.0}, 3.5, 365, 548, Weapon_socket::two_hand, Weapon_type::axe}, 
                 {"soul_cleaver", Attributes{65.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 315}, 3.7, 386, 579, Weapon_socket::two_hand, Weapon_type::axe},
                 {"vengeful_gladiators_decapitator", Attributes{0.0, 0.0}, Special_stats{2.083333333, 0.9511731135, 92.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 386, 580, Weapon_socket::two_hand, Weapon_type::axe}, 
+            
+                // Phase 4
+                {"trollbane", Attributes{0.0, 39.0}, Special_stats{0.0, 0.0, 94.0, 0, 0.0}, 3.6, 358, 537, Weapon_socket::two_hand, Weapon_type::axe}, 
             };
 
     std::vector<Weapon> two_handed_maces_t
@@ -975,6 +978,10 @@ struct Armory
                 {"claw_of_molten_fury", Attributes{0.0, 20.0}, Special_stats{0.0, 0.0, 38.0, 0, 0.0}, 2.7, 216, 325, Weapon_socket::main_hand, Weapon_type::unarmed, {}, Set::the_fists_of_fury},
                 // off_hand
                 {"fist_of_molten_fury", Attributes{0.0, 20.0}, Special_stats{0.0, 0.0, 38, 0, 0.0}, 1.5, 120, 181, Weapon_socket::off_hand, Weapon_type::unarmed, {}, Set::the_fists_of_fury},
+            
+                // Phase 4
+                // off_hand
+                {"fury", Attributes{0.0, 0.0}, Special_stats{0.0, 1.27, 26, 0, 0.0}, 2.6, 174, 323, Weapon_socket::off_hand, Weapon_type::unarmed},
             };
 
     std::vector<Set_bonus> set_bonuses{
