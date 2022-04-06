@@ -850,6 +850,8 @@ struct Armory
                 // Phase 4
                 {"jin-rokh_the_great_apocalypse", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 120.0, 0, 0.0285, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 3.7, 380, 570, Weapon_socket::two_hand, Weapon_type::sword},
 
+                // Phase 5
+                {"apolyon_the_soulrender", Attributes{0.0, 0.0}, Special_stats{1.900452488687783, 0.0, 126.0, 0, 0.02025316455696203, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 3.4, 404, 607, Weapon_socket::two_hand, Weapon_type::sword},
             };
 
     std::vector<Weapon> two_handed_axes_polearm_t
@@ -890,6 +892,9 @@ struct Armory
             
                 // Phase 4
                 {"trollbane", Attributes{0.0, 39.0}, Special_stats{0.0, 0.0, 94.0, 0, 0.0}, 3.6, 358, 537, Weapon_socket::two_hand, Weapon_type::axe}, 
+            
+                // Phase 5
+                {"shivering_felspine", Attributes{0.0, 52.0}, Special_stats{0.0, 0.0, 120.0, 0, 0.03354430379746835}, 3.5, 393, 590, Weapon_socket::two_hand, Weapon_type::axe}, 
             };
 
     std::vector<Weapon> two_handed_maces_t
