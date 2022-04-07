@@ -1048,6 +1048,14 @@ struct Armory
                 {"dagger_of_bad_mojo", Attributes{0.0, 21.0}, Special_stats{0.0, 0.0, 40, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.8, 137, 207, Weapon_socket::one_hand, Weapon_type::dagger}, 
                 {"prowlers_strikeblade", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 42, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.5, 100, 187, Weapon_socket::one_hand, Weapon_type::dagger}, 
                 {"umbral_shiv", Attributes{0.0, 12.0}, Special_stats{0.0, 0.82, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 1.8, 137, 207, Weapon_socket::one_hand, Weapon_type::dagger}, 
+
+                // Phase 5
+                {"crux_of_the_apocalypse", Attributes{0.0, 18.0}, Special_stats{0.0, 0.0, 56, 0, 0.01708860759493671, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 1.8, 164, 247, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"shiv_of_exsanguination", Attributes{0.0, 25.0}, Special_stats{0.0, 0.0, 42, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 196}, 1.8, 136, 253, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"fang_of_kalecgos", Attributes{0.0, 25.0}, Special_stats{0.0, 0.0, 48, 0, 0.01582278481012658, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 1.5, 113, 211, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"brutal_gladiators_shiv", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.4, 105, 197, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"brutal_gladiators_mutilator", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.8, 136, 253, Weapon_socket::one_hand, Weapon_type::dagger}, 
+                {"brutal_gladiators_shanker", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.8, 155, 233, Weapon_socket::one_hand, Weapon_type::dagger},             
             };
 
     std::vector<Weapon> maces_t
