@@ -186,7 +186,12 @@ struct Armory
                 {"amani_mask_of_death", Attributes{46.0, 0.0}, Special_stats{0.0, 2.09, 0.0, 0, 0.0}, Socket::head},
                 {"coif_of_the_jungle_stalker", Attributes{0.0, 36.0}, Special_stats{0.0, 0.0, 72, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, Socket::head},
                 {"grimgrin_faceguard", Attributes{0.0, 40.0}, Special_stats{0.0, 1.52, 82, 0, 0.0}, Socket::head}, 
-                
+
+                // Phase 5
+                {"coif_of_alleria", Attributes{0.0, 43.0}, Special_stats{1.5398550724637683, 0.0, 126.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 182}, Socket::head}, 
+                {"crown_of_anasterian", Attributes{61.0, 0.0}, Special_stats{1.8115942028985508, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 231}, Socket::head}, 
+                {"duplicitous_guise", Attributes{0.0, 43.0}, Special_stats{0.0, 1.9023462270133165, 126.0, 0, 0.021559923906150923}, Socket::head}, 
+                {"mayhem_projection_goggles", Attributes{62.0, 0.0}, Special_stats{2.3097826086956523, 1.648700063411541, 0.0, 0, 0.0}, Socket::head}, 
             };
 
     std::vector<Armor> neck_t
@@ -223,6 +228,11 @@ struct Armory
                 
                 // Phase 4
                 {"brooch_of_deftness", Attributes{0.0, 0.0}, Special_stats{0, 1.40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.326569435637287}, Socket::neck}, 
+
+                // Phase 5
+                {"hard_khorium_choker", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 58, 0, 0.0183893468611287250, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 150}, Socket::neck}, 
+                {"clutch_of_demise", Attributes{0.0, 25.0}, Special_stats{0.0, 0.0, 64, 0, 0.019023462270133164}, Socket::neck}, 
+                {"sindorei_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.2681159420289856, 0.0, 58, 0, 0.0}, Socket::neck}, 
             };
 
     std::vector<Armor> shoulder_t
@@ -265,6 +275,13 @@ struct Armory
                 {"pauldrons_of_gruesome_fate", Attributes{42.0, 0.0}, Special_stats{0.0, 1.46, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::shoulder}, 
                 {"shoulderpads_of_dancing_blades", Attributes{0.0, 33.0}, Special_stats{0.0, 1.01, 68.0, 0, 0.0}, Socket::shoulder}, 
                 {"pauldrons_of_primal_fury", Attributes{0.0, 28.0}, Special_stats{0.0, 1.27, 58.0, 0, 0.0}, Socket::shoulder}, 
+
+                // Phase 5
+                {"pauldrons_of_berserking", Attributes{45.0, 0.0}, Special_stats{1.358695652173913, 0.0, 0.0, 0, 0.017121116043119847}, Socket::shoulder}, 
+                {"demontooth_shoulderpads", Attributes{38.0, 38.0}, Special_stats{0.9057971014492754, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 105}, Socket::shoulder}, 
+                {"mantle_of_the_golden_forest", Attributes{0.0, 40.0}, Special_stats{0.0, 0.0, 90.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::shoulder}, 
+                {"shoulderepads_of_vehemence", Attributes{0.0, 33.0}, Special_stats{0.0, 1.648700063411541, 90.0, 0, 0.019023462270133164}, Socket::shoulder}, 
+
             };
 
     std::vector<Armor> back_t
@@ -306,6 +323,9 @@ struct Armory
                 // Phase 4
                 {"dorys_embrace", Attributes{0.0, 0.0}, Special_stats{0.9057971014, 0.0, 46.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 112}, Socket::back},
                 {"cloak_of_fiends", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 46.0, 0, 0.01585288523}, Socket::back}
+
+                // Phase 5
+                {"cloak_of_unforgivable_sin", Attributes{0.0, 26}, Special_stats{0.0, 0.0, 72, 0, 0.020291693088142045}, Socket::back}, 
             };
 
     std::vector<Armor> chest_t
@@ -364,6 +384,15 @@ struct Armory
                 {"bloodstained_elven_battlevest", Attributes{46.0, 0.0}, Special_stats{1.59, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 161}, Socket::chest}, 
                 {"shadowtooth_trollskin_cuirass", Attributes{0.0, 45.0}, Special_stats{0.0, 0.0, 92, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 210}, Socket::chest},
                 {"arrow-fall_chestguard", Attributes{0.0, 39.0}, Special_stats{0.0, 0.0, 78, 0.0, 0.0190}, Socket::chest},
+
+                // Phase 5
+                {"hard_khorium_breastplate", Attributes{61.0, 0.0}, Special_stats{1.8568840579710146, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 280}, Socket::chest}, 
+                {"bladed_chaos_tunic", Attributes{0.0, 42.0}, Special_stats{1.7210144927536233, 0.0, 120.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 210}, Socket::chest}, 
+                {"carapace_of_sun_and_shadow", Attributes{0.0, 42.0}, Special_stats{0.0, 1.9023462270133165, 120.0, 0, 0.024096385542168676}, Socket::chest}, 
+                {"warharness_of_reckless_fury", Attributes{61.0, 0.0}, Special_stats{1.8568840579710146, 0.0, 0.0, 0, 0.020291693088142045}, Socket::chest}, 
+                {"embrace_of_the_phoenix", Attributes{0.0, 44.0}, Special_stats{0.0, 0.0, 104.0, 0, 0.02790107799619531}, Socket::chest}, 
+                {"harness_of_carnal_instinct", Attributes{52.0, 44.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 196}, Socket::chest}, 
+                {"vicious_hawkstrider_hauberk", Attributes{0.0, 47.0}, Special_stats{0.0, 0.0, 104.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 182}, Socket::chest}, 
             };
 
     std::vector<Armor> wrists_t
@@ -415,6 +444,9 @@ struct Armory
                 // Phase 4
                 {"eternium_rage_shackles", Attributes{32.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 150}, Socket::wrist},
                 {"master_assassin_wristwraps", Attributes{0.0, 17.0}, Special_stats{0.82, 0.0, 50}, Socket::wrist},
+
+                // Phase 5
+                {"onslaught_bracers", Attributes{33, 0.0}, Special_stats{1.358695652173913, 1.0145846544071022, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, Socket::wrist}, 
             };
 
     std::vector<Armor> hands_t
@@ -469,6 +501,15 @@ struct Armory
                 // Phase 4
                 {"furious_deathgrips", Attributes{34.0, 0.0}, Special_stats{0.0, 1.59, 0.0, 0, 0.0}, Socket::hands},
                 {"tricksters_stickyfingers", Attributes{0.0, 30.0}, Special_stats{0.0, 0.0, 68, 0, 0.0159}, Socket::hands}, 
+
+                // Phase 5
+                {"thalassian_ranger_gauntlets", Attributes{0.0, 40.0}, Special_stats{1.0416666666666667, 0.0, 80.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 182}, Socket::hands}, 
+                {"borderland_paingrips", Attributes{47.0, 0.0}, Special_stats{1.7663043478260871, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 161}, Socket::hands}, 
+                {"gloves_of_immortal_dusk", Attributes{0.0, 30.0}, Special_stats{1.358695652173913, 0.0, 90.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::hands}, 
+                {"hard_khorium_battlefists", Attributes{45.0, 0.0}, Special_stats{0.0, 1.4584654407102093, 0.0, 0, 0.022828154724159798}, Socket::hands}, 
+                {"shadowed_gauntlets_of_paroxysm", Attributes{0.0, 41.0}, Special_stats{0.0, 0.0, 82.0, 0, 0.019023462270133164}, Socket::hands}, 
+                {"fletchers_gloves_of_the_phoenix", Attributes{0.0, 30.0}, Special_stats{0.0, 0.0, 76.0, 0, 0.021559923906150923}, Socket::hands}, 
+                {"gloves_of_the_forest_drifter", Attributes{34.0, 34.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, Socket::hands}, 
 
             };
 
@@ -526,6 +567,9 @@ struct Armory
                 // Phase 4
                 {"chain_of_unleashed_rage", Attributes{34.0, 0.0}, Special_stats{0.0, 0.8877615726062144, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::belt},
                 {"bladeangels_money_belt", Attributes{0.0, 25.0}, Special_stats{0.95, 0.0, 58, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 77}, Socket::belt},
+
+                // Phase 5
+                {"onslaught_belt", Attributes{43, 0.0}, Special_stats{1.8115942028985508, 0.0, 0.0, 0, 0.016487000634115410, 0, 0, 0, 0, 0, 0, 6.594800253646164}, Socket::belt}, 
             };
 
     std::vector<Armor> legs_t
@@ -583,6 +627,11 @@ struct Armory
                 {"bloodthirsters_wargreaves", Attributes{46.0, 0.0}, Special_stats{0.0, 2.41, 0.0, 0, 0.0}, Socket::legs},
                 {"shallow-grave_trousers", Attributes{0.0, 45.0}, Special_stats{0.0, 0.0, 92.0, 0, 0.0190}, Socket::legs}, 
 
+                // Phase 5
+                {"felfury_legplates", Attributes{61.0, 0.0}, Special_stats{1.5398550724637683, 0.0, 0.0, 0, 0.031705770450221944}, Socket::legs}, 
+                {"leggings_of_the_immortal_night", Attributes{0.0, 41.0}, Special_stats{0.0, 2.0291693088142044, 124.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 224}, Socket::legs}, 
+                {"leggings_of_the_immortal_beast", Attributes{44.0, 46.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 189}, Socket::legs}, 
+                {"starstalker_legguards", Attributes{0.0, 57.0}, Special_stats{0.0, 1.2682308180088777, 120.0, 0, 0.0}, Socket::legs}, 
             };
 
     std::vector<Armor> boots_t
@@ -632,6 +681,9 @@ struct Armory
                 {"skullshatter_warboots", Attributes{30.0, 0.0}, Special_stats{1.31, 0.0, 0.0, 0, 0.0}, Socket::boots},
                 {"shadowhunters_treads", Attributes{0.0, 26.0}, Special_stats{0.0, 0.0, 66.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 105}, Socket::boots},
                 {"nynjahs_tabi_boots", Attributes{0.0, 29.0}, Special_stats{0.0, 1.40, 60.0, 0, 0.0}, Socket::boots}, 
+
+                // Phase 5
+                {"onslaught_treads", Attributes{44, 0.0}, Special_stats{1.6304347826086958, 1.585288522511097, 0.0, 0, 0.019023462270133164}, Socket::boots}, 
             };
 
     std::vector<Armor> ring_t
@@ -684,6 +736,11 @@ struct Armory
 
                 // Phase 4
                 {"signet_of_primal_wrath", Attributes{0.0, 28.0}, Special_stats{0.0, 0.0, 58.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 126}, Socket::ring},  
+
+                // Phase 5
+                {"band_of_ruinous_delight", Attributes{0.0, 0.0}, Special_stats{1.4492753623188408, 0.0, 66, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 161}, Socket::ring}, 
+                {"hard_khorium_band", Attributes{0.0, 30.0}, Special_stats{0.0, 0.0, 58, 0, 0.017755231452124286}, Socket::ring}, 
+                {"angelistas_revenge", Attributes{0.0, 29.0}, Special_stats{0.0, 0.0, 58, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 126}, Socket::ring}, 
             };
 
     std::vector<Armor> trinket_t
@@ -725,6 +782,12 @@ struct Armory
 
                 // Phase 4
                 {"berserkers_call", Attributes{0, 0}, Special_stats{0, 0, 90}, Socket::trinket, Set::none, {}, {{"berserkers_call", Use_effect::Effect_socket::shared, {0,  0}, {0, 0, 360}, 0, 20, 120, true}}},
+
+                // Phase 5
+                {"blackened_naaru_sliver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.03424223208623969}, Socket::trinket}, 
+                {"shard_of_contempt", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 11.160431198478124}, Socket::trinket}, 
+                {"steely_naaru_sliver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 13.696892834495879}, Socket::trinket}, 
+
             };
 
     std::vector<Armor> ranged_t
@@ -766,6 +829,12 @@ struct Armory
                 // Phase 4
                 {"ancient_amani_longbow", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 38.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 126}, Socket::ranged}, 
                 {"tuskbreaker", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 38.0, 0, 0.01141407736}, Socket::ranged}, 
+
+                // Phase 5
+                {"thoridal_the_stars_fury", Attributes{0.0, 17.0}, Special_stats{0.7246376811594204, 0.0, 34, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 112}, Socket::ranged}, 
+                {"golden_bow_of_quelthalas", Attributes{0.0, 18.0}, Special_stats{0.0, 0.0, 34, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 175}, Socket::ranged}, 
+                {"blade_of_lifes_inevitability", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 36, 0, 0.010145846544071023}, Socket::ranged}, 
+                {"crossbow_of_relentless_strikes", Attributes{0.0, 0.0}, Special_stats{0.8152173913043479, 0.8877615726062144, 32, 0, 0.0}, Socket::ranged}, 
 
             };
 
@@ -820,6 +889,10 @@ struct Armory
                 // main_hand / one_hand
                 {"heartless", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 42.0, 0, 0.0127}, 2.6, 174, 323, Weapon_socket::one_hand, Weapon_type::sword}, 
                 {"akilzons_talonblade", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 52.0, 0, 0.0114}, 1.5, 100, 187, Weapon_socket::one_hand, Weapon_type::sword}, 
+
+                // Phase 5
+                // main_hand / one_hand
+                
            };
 
 
