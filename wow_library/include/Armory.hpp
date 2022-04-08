@@ -322,7 +322,7 @@ struct Armory
 
                 // Phase 4
                 {"dorys_embrace", Attributes{0.0, 0.0}, Special_stats{0.9057971014, 0.0, 46.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 112}, Socket::back},
-                {"cloak_of_fiends", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 46.0, 0, 0.01585288523}, Socket::back}
+                {"cloak_of_fiends", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 46.0, 0, 0.01585288523}, Socket::back},
 
                 // Phase 5
                 {"cloak_of_unforgivable_sin", Attributes{0.0, 26}, Special_stats{0.0, 0.0, 72, 0, 0.020291693088142045}, Socket::back}, 
@@ -892,7 +892,10 @@ struct Armory
 
                 // Phase 5
                 // main_hand / one_hand
-                
+                {"dragonscale_encrusted_longblade", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.01582278481012658, 0, 0, 0, 0, 0, 0, 6.34147578824544}, 1.5, 113, 211, Weapon_socket::one_hand, Weapon_type::sword}, 
+                {"muramasa", Attributes{0.0, 0.0}, Special_stats{0.0, 1.075949367088608, 0.0, 0, 0.02215189873417722}, 2.6, 196, 365, Weapon_socket::one_hand, Weapon_type::sword}, 
+                {"brutal_gladiators_quickblade", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::one_hand, Weapon_type::sword}, 
+                {"brutal_gladiators_slicer", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 224, 337, Weapon_socket::one_hand, Weapon_type::sword},   
            };
 
 
