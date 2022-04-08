@@ -1113,7 +1113,18 @@ struct Armory
                 {"rage", Attributes{0.0, 20.0}, Special_stats{0.59, 0.0, 0, 0, 0.0}, 2.6, 174, 323, Weapon_socket::main_hand, Weapon_type::unarmed},
                 // off_hand
                 {"fury", Attributes{0.0, 0.0}, Special_stats{0.0, 1.27, 26, 0, 0.0}, 2.6, 174, 323, Weapon_socket::off_hand, Weapon_type::unarmed},
-            };
+
+                // Phase 5
+                // main_hand
+                {"hand_of_the_deceiver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 54, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 196}, 2.6, 238, 357, Weapon_socket::main_hand, Weapon_type::unarmed}, 
+                {"vanirs_right_fist_of_brutality", Attributes{0.0, 23.0}, Special_stats{0.0, 0.0, 44, 0, 0.01329113924050633}, 2.5, 180, 335, Weapon_socket::main_hand, Weapon_type::unarmed},
+                {"brutal_gladiators_right_ripper", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::main_hand, Weapon_type::unarmed}, 
+                // off_hand
+                {"vanirs_left_fist_of_brutality", Attributes{0.0, 0.0}, Special_stats{0.0, 1.329113924050633, 44, 0, 0.01455696202531646}, 2.5, 180, 335, Weapon_socket::off_hand, Weapon_type::unarmed},
+                {"vanirs_left_fist_of_savagery", Attributes{0.0, 0.0}, Special_stats{0.0, 1.329113924050633, 44, 0, 0.01455696202531646}, 1.5, 108, 201, Weapon_socket::off_hand, Weapon_type::unarmed},
+                {"brutal_gladiators_left_ripper", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::unarmed}, 
+                {"brutal_gladiators_left_render", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed}, 
+             };
 
     std::vector<Set_bonus> set_bonuses{
         {Set::ragesteel, 2, "ragesteel-2pc", {}, {0, 1.2683, 0}},
