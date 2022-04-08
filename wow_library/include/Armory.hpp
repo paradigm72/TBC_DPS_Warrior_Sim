@@ -280,7 +280,7 @@ struct Armory
                 {"pauldrons_of_berserking", Attributes{45.0, 0.0}, Special_stats{1.358695652173913, 0.0, 0.0, 0, 0.017121116043119847}, Socket::shoulder}, 
                 {"demontooth_shoulderpads", Attributes{38.0, 38.0}, Special_stats{0.9057971014492754, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 105}, Socket::shoulder}, 
                 {"mantle_of_the_golden_forest", Attributes{0.0, 40.0}, Special_stats{0.0, 0.0, 90.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::shoulder}, 
-                {"shoulderepads_of_vehemence", Attributes{0.0, 33.0}, Special_stats{0.0, 1.648700063411541, 90.0, 0, 0.019023462270133164}, Socket::shoulder}, 
+                {"shoulderpads_of_vehemence", Attributes{0.0, 33.0}, Special_stats{0.0, 1.648700063411541, 90.0, 0, 0.019023462270133164}, Socket::shoulder}, 
 
             };
 
