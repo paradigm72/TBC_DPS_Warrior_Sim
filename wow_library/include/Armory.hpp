@@ -928,6 +928,7 @@ struct Armory
 
                 // Phase 5
                 {"apolyon_the_soulrender", Attributes{0.0, 0.0}, Special_stats{1.900452488687783, 0.0, 126.0, 0, 0.02025316455696203, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 3.4, 404, 607, Weapon_socket::two_hand, Weapon_type::sword},
+                {"brutal_gladiators_greatsword", Attributes{50.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 0.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::sword},             
             };
 
     std::vector<Weapon> two_handed_axes_polearm_t
@@ -971,6 +972,7 @@ struct Armory
             
                 // Phase 5
                 {"shivering_felspine", Attributes{0.0, 52.0}, Special_stats{0.0, 0.0, 120.0, 0, 0.03354430379746835}, 3.5, 393, 590, Weapon_socket::two_hand, Weapon_type::axe}, 
+                {"brutal_gladiators_decapitator", Attributes{0.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 100, 0.0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::mace},
             };
 
     std::vector<Weapon> two_handed_maces_t
@@ -986,6 +988,9 @@ struct Armory
 
                 // Phase 3
                 {"torch_of_the_damned", Attributes{51.0, 0.0}, Special_stats{1.7210144927536233, 0.0, 0.0, 0, 0.031705770450221944}, 3.8, 396, 595, Weapon_socket::two_hand, Weapon_type::mace}, 
+            
+                // Phase 5
+                {"brutal_gladiators_bonegrinder", Attributes{50.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 0.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::mace},
             };
 
     std::vector<Weapon> axes_t
