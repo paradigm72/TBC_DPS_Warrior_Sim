@@ -928,6 +928,7 @@ struct Armory
 
                 // Phase 5
                 {"apolyon_the_soulrender", Attributes{0.0, 0.0}, Special_stats{1.900452488687783, 0.0, 126.0, 0, 0.02025316455696203, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0}, 3.4, 404, 607, Weapon_socket::two_hand, Weapon_type::sword},
+                {"brutal_gladiators_greatsword", Attributes{50.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 0.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::sword},             
             };
 
     std::vector<Weapon> two_handed_axes_polearm_t
@@ -971,6 +972,7 @@ struct Armory
             
                 // Phase 5
                 {"shivering_felspine", Attributes{0.0, 52.0}, Special_stats{0.0, 0.0, 120.0, 0, 0.03354430379746835}, 3.5, 393, 590, Weapon_socket::two_hand, Weapon_type::axe}, 
+                {"brutal_gladiators_decapitator", Attributes{0.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 100, 0.0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::axe},
             };
 
     std::vector<Weapon> two_handed_maces_t
@@ -986,6 +988,9 @@ struct Armory
 
                 // Phase 3
                 {"torch_of_the_damned", Attributes{51.0, 0.0}, Special_stats{1.7210144927536233, 0.0, 0.0, 0, 0.031705770450221944}, 3.8, 396, 595, Weapon_socket::two_hand, Weapon_type::mace}, 
+            
+                // Phase 5
+                {"brutal_gladiators_bonegrinder", Attributes{50.0, 0.0}, Special_stats{2.192982456140351, 1.20253164556962, 0.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 98}, 3.6, 404, 606, Weapon_socket::two_hand, Weapon_type::mace},
             };
 
     std::vector<Weapon> axes_t
@@ -1021,6 +1026,13 @@ struct Armory
                 // Phase 4
                 // main_hand / one_hand
                 {"cleaver_of_the_unforgiving", Attributes{0.0, 0.0}, Special_stats{0.0, 0.76, 0.0, 0, 0.0}, 1.6, 110, 205, Weapon_socket::one_hand, Weapon_type::axe},
+            
+                // Phase 5
+                // one_hand
+                {"brutal_gladiators_cleaver", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::one_hand, Weapon_type::axe},
+                // off_hand
+                {"brutal_gladiators_chopper", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::axe},
+                {"brutal_gladiators_hacker", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::axe},     
             };
 
     std::vector<Weapon> daggers_t
@@ -1082,6 +1094,14 @@ struct Armory
                 // main_hand / one_hand
                 {"syphon_of_the_nathrezim", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 50.0, 0, 0.0}, 2.8, 196, 365, Weapon_socket::one_hand, Weapon_type::mace}, 
                 {"swiftsteel_bludgeon", Attributes{0.0, 0.0}, Special_stats{0.0, 1.2048192771084338, 40.0, 0, 0.017121116043119847}, 1.5, 105, 196, Weapon_socket::one_hand, Weapon_type::mace}, 
+            
+                // Phase 5
+                // main_hand / one_hand
+                // one_hand
+                {"brutal_gladiators_pummeler", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::one_hand, Weapon_type::mace},
+                // off_hand
+                {"brutal_gladiators_bonecracker", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38.0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::mace},     
+
             };
 
     std::vector<Weapon> fists_t
