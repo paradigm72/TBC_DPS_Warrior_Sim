@@ -765,6 +765,11 @@ void Combat_simulator::hit_effects(Sim_state& state, Hit_result hit_result, Weap
             buff_manager_.add_combat_buff(hit_effect, time_keeper_.time);
             break;
         }
+        case Hit_effect::Type::blackened_naaru_sliver: {
+            on_proc(hit_effect, "PROC: ", hit_effect.name, " stats increased for ", hit_effect.duration * 0.001, "s");
+            buff_manager_.add_combat_buff(hit_effect, time_keeper_.time);
+            break;
+        }
         default:
             logger_.print("PROC: ", hit_effect.name, " has unknown type ", static_cast<int>(hit_effect.type));
             assert(false);
