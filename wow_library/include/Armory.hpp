@@ -233,6 +233,7 @@ struct Armory
                 {"hard_khorium_choker", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 58, 0, 0.0183893468611287250, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 150}, Socket::neck}, 
                 {"clutch_of_demise", Attributes{0.0, 25.0}, Special_stats{0.0, 0.0, 64, 0, 0.019023462270133164}, Socket::neck}, 
                 {"sindorei_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.2681159420289856, 0.0, 58, 0, 0.0}, Socket::neck}, 
+                {"guardians_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.140350877192982, 0.0, 58, 0, 0.0}, Socket::neck}, 
             };
 
     std::vector<Armor> shoulder_t
@@ -447,6 +448,7 @@ struct Armory
 
                 // Phase 5
                 {"onslaught_bracers", Attributes{33, 0.0}, Special_stats{1.358695652173913, 1.0145846544071022, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, Socket::wrist, Set::onslaught}, 
+                {"guardians_plate_bracers", Attributes{28.0, 0.0}, Special_stats{1.052631578947368, 0.0, 0.0}, Socket::wrist},
             };
 
     std::vector<Armor> hands_t
@@ -570,6 +572,7 @@ struct Armory
 
                 // Phase 5
                 {"onslaught_belt", Attributes{43, 0.0}, Special_stats{1.8115942028985508, 0.0, 0.0, 0, 0.016487000634115410, 0, 0, 0, 0, 0, 0, 6.594800253646164}, Socket::belt, Set::onslaught}, 
+                {"guardians_plate_belt", Attributes{40.0, 0.0}, Special_stats{1.754385964912281, 0.0, 0.0, 0, 0.0}, Socket::belt},             
             };
 
     std::vector<Armor> legs_t
@@ -684,6 +687,7 @@ struct Armory
 
                 // Phase 5
                 {"onslaught_treads", Attributes{44, 0.0}, Special_stats{1.6304347826086958, 1.585288522511097, 0.0, 0, 0.019023462270133164}, Socket::boots, Set::onslaught}, 
+                {"guardians_plate_greaves", Attributes{40.0, 0.0}, Special_stats{1.754385964912281, 0.0, 0.0}, Socket::boots},
             };
 
     std::vector<Armor> ring_t
@@ -741,6 +745,7 @@ struct Armory
                 {"band_of_ruinous_delight", Attributes{0.0, 0.0}, Special_stats{1.4492753623188408, 0.0, 66, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 161}, Socket::ring}, 
                 {"hard_khorium_band", Attributes{0.0, 30.0}, Special_stats{0.0, 0.0, 58, 0, 0.017755231452124286}, Socket::ring}, 
                 {"angelistas_revenge", Attributes{0.0, 29.0}, Special_stats{0.0, 0.0, 58, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 126}, Socket::ring}, 
+                {"guardians_band_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.315789473684211, 0.0, 52.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 56}, Socket::ring}, 
             };
 
     std::vector<Armor> trinket_t
