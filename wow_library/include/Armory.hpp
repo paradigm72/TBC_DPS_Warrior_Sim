@@ -1097,6 +1097,7 @@ struct Armory
                 // main_hand / one_hand
                 {"dragonstrike", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.0}, 2.7, 184, 343, Weapon_socket::one_hand, Weapon_type::mace, {{"bs_mace_haste", Hit_effect::Type::stat_boost, {}, {0, 0, 0, 0, .134}, 0, 10, 0, 2.7 / 60}}}, 
                 {"rod_of_the_sun_king", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 52.0, 0, 0.0}, 2.7, 189, 352, Weapon_socket::one_hand, Weapon_type::mace, {{"rod_of_the_sun_king", Hit_effect::Type::rage_boost, {}, {}, 5, 0, 0, 2.7 / 60}}},
+                {"mallet_of_the_tides", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 3.5510462904248574}, 1.7, 115, 214, Weapon_socket::one_hand, Weapon_type::mace}, 
 
                 // Phase 3
                 // main_hand / one_hand

@@ -972,6 +972,7 @@
                     <option value="dragonstrike"> Dragonstrike</option>
                     <option value="drakefist_hammer"> Drakefist Hammer</option>
                     <option value="fools_bane"> Fools Bane</option>
+                    <option value="mallet_of_the_tides"> Mallet of the Tides</option>
                     <option value="rod_of_the_sun_king"> Rod of the Sun King</option>
                     <option value="runic_hammer"> Runic Hammer</option>
                     <option value="swiftsteel_bludgeon"> Swiftsteel Bludgeon</option>
@@ -1093,6 +1094,7 @@
                     <option value="dragonmaw"> Dragonmaw</option>
                     <option value="dragonstrike"> Dragonstrike</option>
                     <option value="fools_bane"> Fools Bane</option>
+                    <option value="mallet_of_the_tides"> Mallet of the Tides</option>
                     <option value="rod_of_the_sun_king"> Rod of the Sun King</option>
                     <option value="runic_hammer"> Runic Hammer</option>
                     <option value="swiftsteel_bludgeon"> Swiftsteel Bludgeon</option>
@@ -3670,8 +3672,16 @@
             <input type="checkbox" id="gift_of_the_wild" checked>
             <label for="gift_of_the_wild"> Gift of the Wild</label><br>
 
-            <input type="checkbox" id="leader_of_the_pack">
-            <label for="leader_of_the_pack"> Leader of the Pack</label><br>
+            <div class="hide_description" id="leader_of_the_pack_div"></div>
+                <input type="checkbox" id="leader_of_the_pack"
+                    onclick="show_div('leader_of_the_pack', 'idol_of_the_raven_goddess_div')">
+                <label for="leader_of_the_pack"> Leader of the Pack</label><br>
+                <div class="description" id="idol_of_the_raven_goddess_div">
+                    <input type="checkbox" id="idol_of_the_raven_goddess">
+                    <label for="idol_of_the_raven_goddess"> Idol of the Raven Goddess</label><br>
+                </div>
+
+                    
 
             <input type="checkbox" id="trueshot_aura" checked>
             <label for="trueshot_aura"> Trueshot Aura</label><br>
@@ -4553,7 +4563,8 @@
     }
 
 
-    let buffs = ["battle_shout", "blessing_of_kings", "blessing_of_might", "gift_of_the_wild", "leader_of_the_pack", "trueshot_aura", "improved_hunters_mark",
+    let buffs = ["battle_shout", "blessing_of_kings", "blessing_of_might", "gift_of_the_wild", "leader_of_the_pack", "idol_of_the_raven_goddess", 
+        "trueshot_aura", "improved_hunters_mark",
         "windfury_totem", "strength_of_earth_totem", "grace_of_air_totem", "improved_seal_of_the_crusader", "improved_sanctity_aura",
         "heroic_presence", "blood_frenzy", "braided_eternium_chain", "improved_faerie_fire", "battle_shout_preshout_bonus"];
     let buffs_input = [];

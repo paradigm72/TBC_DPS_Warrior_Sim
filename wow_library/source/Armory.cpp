@@ -1137,7 +1137,12 @@ void Armory::add_buffs_to_character(Character& character, const std::vector<std:
     }
     if (String_helpers::find_string(buffs_vec, "leader_of_the_pack"))
     {
-        character.add_buff(buffs.leader_of_the_pack);
+        auto buff = buffs.leader_of_the_pack;
+        if (String_helpers::find_string(buffs_vec, "idol_of_the_raven_goddess"))
+        {
+            buff.special_stats.critical_strike += 0.9057971014;
+        }
+        character.add_buff(buff);
     }
     if (String_helpers::find_string(buffs_vec, "improved_seal_of_the_crusader"))
     {
