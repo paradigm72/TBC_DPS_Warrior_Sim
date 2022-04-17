@@ -1152,7 +1152,8 @@ struct Armory
                 {"vanirs_left_fist_of_brutality", Attributes{0.0, 0.0}, Special_stats{0.0, 1.329113924050633, 44, 0, 0.01455696202531646}, 2.5, 180, 335, Weapon_socket::off_hand, Weapon_type::unarmed},
                 {"vanirs_left_fist_of_savagery", Attributes{0.0, 0.0}, Special_stats{0.0, 1.329113924050633, 44, 0, 0.01455696202531646}, 1.5, 108, 201, Weapon_socket::off_hand, Weapon_type::unarmed},
                 {"brutal_gladiators_left_ripper", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::unarmed}, 
-                {"brutal_gladiators_left_render", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed}, 
+                {"brutal_gladiators_left_render", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed},
+                {"mounting_vengeance", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 4, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed}, 
              };
 
     std::vector<Set_bonus> set_bonuses{
