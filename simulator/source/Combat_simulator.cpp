@@ -770,6 +770,7 @@ void Combat_simulator::hit_effects(Sim_state& state, Hit_result hit_result, Weap
             //activate the buff that will add one stack on each subsequent hit (20s duration, no cooldown, 100% chance, max charges 10)
             Hit_effect bns_hit_effect("blackened_naaru_sliver_active", Hit_effect::Type::blackened_naaru_sliver_active, {}, {}, 0, 20, 0, 1.00, 0, 10);
             buff_manager_.add_combat_buff(bns_hit_effect, time_keeper_.time);
+            buff_manager_.add_hit_aura(bns_hit_effect.name, bns_hit_effect, bns_hit_effect.duration, time_keeper_.time);
             break;
         }
         case Hit_effect::Type::blackened_naaru_sliver_active: {
