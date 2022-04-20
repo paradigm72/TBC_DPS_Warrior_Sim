@@ -768,16 +768,17 @@ void Combat_simulator::hit_effects(Sim_state& state, Hit_result hit_result, Weap
         case Hit_effect::Type::blackened_naaru_sliver: {
             on_proc(hit_effect, "PROC: ", hit_effect.name, " buff active for ", hit_effect.duration * 0.001, "s");
             //activate the buff that will add one stack on each subsequent hit (20s duration, no cooldown, 100% chance, max charges 10)
-            Hit_effect bns_hit_effect("blackened_naaru_sliver_active", Hit_effect::Type::blackened_naaru_sliver_active, {}, {}, 0, 20, 0, 1.00, 0, 10);
-            buff_manager_.add_combat_buff(bns_hit_effect, time_keeper_.time);
-            buff_manager_.add_hit_aura(bns_hit_effect.name, bns_hit_effect, bns_hit_effect.duration, time_keeper_.time);
+            Hit_effect bnsa_hit_effect("blackened_naaru_sliver_active", Hit_effect::Type::blackened_naaru_sliver_active, {}, {}, 0, 20, 0, 1.00, 0, 10);
+            buff_manager_.add_combat_buff(bnsa_hit_effect, time_keeper_.time);
+            buff_manager_.add_hit_aura(bnsa_hit_effect.name, bnsa_hit_effect, bnsa_hit_effect.duration, time_keeper_.time);
             break;
         }
         case Hit_effect::Type::blackened_naaru_sliver_active: {
-            on_proc(hit_effect, "PROC: ", hit_effect.name, " stack gained");
-            //add one 44 AP stack of blackened_naaru_sliver, with 20s duration
-            Hit_effect bnsa_hit_effect("blackened_naaru_sliver_stack", Hit_effect::Type::stat_boost, {}, {0, 0, 44}, 0, 20, 0, 0);
-            buff_manager_.add_combat_buff(bnsa_hit_effect, time_keeper_.time);
+            on_proc(hit_effect, "PROC: Blackened Naaru Sliver stack gained");
+            //add one 44 AP stack of blackened_naaru_sliver, with 20s duration (all stacks will be dropped early when blackened_naaru_sliver_active fades)
+            Hit_effect bnss_hit_effect("blackened_naaru_sliver_stacks", Hit_effect::Type::stat_boost, {}, {0, 0, 44}, 0, 20, 0, 0);
+            buff_manager_.add_combat_buff(bnss_hit_effect, time_keeper_.time);
+            buff_manager_.add_hit_aura(bnss_hit_effect.name, bnss_hit_effect, bnss_hit_effect.duration, time_keeper_.time);
             break;
         }
         default:
