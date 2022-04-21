@@ -1822,8 +1822,11 @@ std::vector<std::string> Combat_simulator::get_aura_uptimes() const
     double total_sim_time = config.n_batches * config.sim_time;
     for (const auto& aura : buff_manager_.get_aura_uptimes_map())
     {
-        double uptime = aura.second / total_sim_time;
-        aura_uptimes.emplace_back(aura.first + " " + std::to_string(100 * uptime));
+        if (!(filter_aura_from_statistics(aura.first)))
+        {
+            double uptime = aura.second / total_sim_time;
+            aura_uptimes.emplace_back(aura.first + " " + std::to_string(100 * uptime));    
+        }        
     }
     if (flurry_uptime_ != 0.0)
     {
@@ -1840,15 +1843,40 @@ std::vector<std::string> Combat_simulator::get_aura_uptimes() const
     return aura_uptimes;
 }
 
+bool Combat_simulator::filter_aura_from_statistics(std::string aura_name) const
+{
+    if (aura_name == "blackened_naaru_sliver_active")
+    {
+        return true;
+    }
+    return false;           
+}
+
 std::vector<std::string> Combat_simulator::get_proc_statistics() const
 {
     std::vector<std::string> proc_counter;
     for (const auto& proc : proc_data_)
     {
-        double counter = static_cast<double>(proc.second) / config.n_batches;
-        proc_counter.emplace_back(proc.first + " " + std::to_string(counter));
+        if (!(filter_proc_from_statistics(proc.first)))
+        {
+            double counter = static_cast<double>(proc.second) / config.n_batches;
+            proc_counter.emplace_back(proc.first + " " + std::to_string(counter));
+        }        
     }
     return proc_counter;
+}
+
+bool Combat_simulator::filter_proc_from_statistics(std::string proc_name) const
+{
+    if (proc_name == "blackened_naaru_sliver_active")
+    {
+            return true;
+    }
+    if (proc_name == "blackened_naaru_sliver_stacks")
+    {
+            return true;
+    }
+    return false;           
 }
 
 void Combat_simulator::reset_time_lapse()

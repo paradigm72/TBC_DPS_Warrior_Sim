@@ -295,12 +295,13 @@ public:
     void add_damage_source_to_time_lapse(const std::vector<Damage_instance>& damage_instances);
 
     [[nodiscard]] std::vector<std::string> get_aura_uptimes() const;
-
+    [[nodiscard]] bool filter_aura_from_statistics(std::string aura_name) const;
     [[nodiscard]] std::unordered_map<std::string, double> get_aura_uptimes_map() const { return buff_manager_.get_aura_uptimes_map(); }
 
     [[nodiscard]] const std::unordered_map<std::string, int>& get_proc_data() const { return proc_data_; }
 
     [[nodiscard]] std::vector<std::string> get_proc_statistics() const;
+    [[nodiscard]] bool filter_proc_from_statistics(std::string proc_name) const;
 
     void reset_time_lapse();
 
