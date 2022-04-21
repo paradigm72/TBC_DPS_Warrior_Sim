@@ -1156,6 +1156,7 @@ struct Armory
                 {"brutal_gladiators_left_ripper", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::unarmed}, 
                 {"brutal_gladiators_left_render", Attributes{0.0, 0.0}, Special_stats{0.995475113122172, 0.569620253164557, 38, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 49}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed},
                 {"mounting_vengeance", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 46, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, 2.6, 196, 365, Weapon_socket::off_hand, Weapon_type::unarmed}, 
+                {"grip_of_mannoroth", Attributes{0.0, 0.0}, Special_stats{0.0, 1.268230818, 46, 0, 0.01965757768}, 1.5, 113, 211, Weapon_socket::off_hand, Weapon_type::unarmed}, 
              };
 
     std::vector<Set_bonus> set_bonuses{
