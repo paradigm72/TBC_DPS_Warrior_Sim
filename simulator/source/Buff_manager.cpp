@@ -423,6 +423,7 @@ void Buff_manager::force_fade_aura_by_name(const std::string& name, Logger& logg
         {
             //force a fade on the next tick
             do_fade_buff(buff, logger, current_time);
+            return;
         }
     }
 }
