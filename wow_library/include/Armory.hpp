@@ -234,7 +234,9 @@ struct Armory
                 {"hard_khorium_choker", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 58, 0, 0.0183893468611287250, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 150}, Socket::neck}, 
                 {"clutch_of_demise", Attributes{0.0, 25.0}, Special_stats{0.0, 0.0, 64, 0, 0.019023462270133164}, Socket::neck}, 
                 {"sindorei_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.2681159420289856, 0.0, 58, 0, 0.0}, Socket::neck}, 
-                {"guardians_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.176470588235294, 0.0, 58, 0, 0.0}, Socket::neck}, 
+                {"guardians_pendant_of_triumph", Attributes{0.0, 0.0}, Special_stats{1.176470588235294, 0.0, 58, 0, 0.0}, Socket::neck},
+                {"shattered_sun_pendant_of_might_aldor", Attributes{0.0, 18.0}, Special_stats{0.0, 0.0, 64, 0, 0.0}, Socket::neck, Set::none, {{"shattered_sun_pendant_of_might_aldor", Hit_effect::Type::stat_boost, {}, {0.0, 0.0, 200}, 0, 10, 45, .15}}},
+                {"shattered_sun_pendant_of_might_scryers", Attributes{0.0, 18.0}, Special_stats{0.0, 0.0, 64, 0, 0.0}, Socket::neck, Set::none, {{"shattered_sun_pendant_of_might_scryers", Hit_effect::Type::damage_magic, {}, {}, 350, 10, 45, .15}}},
             };
 
     std::vector<Armor> shoulder_t
