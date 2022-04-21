@@ -113,7 +113,7 @@ void Buff_manager::remove_charge(const Hit_effect& hit_effect, int current_time,
     buff.charges -= 1;
     if (buff.charges > 0) return;
     buff.next_fade = current_time; // for correct uptime bookkeeping
-    do_fade_buff(buff, logger);
+    do_fade_buff(buff, logger, current_time);
 }
 
 // instead of using hit_effects per weapon, and "sharing" them via combat_buff name,
@@ -214,7 +214,7 @@ void Buff_manager::increment_combat_buffs(int current_time, Logger& logger)
 
         assert(current_time == buff.next_fade);
 
-        do_fade_buff(buff, logger);
+        do_fade_buff(buff, logger, current_time);
     }
 }
 
@@ -308,7 +308,7 @@ void Buff_manager::increment_hit_auras(int current_time, Logger& logger)
 
         auto& buff = combat_buffs[hit_aura.hit_effect_mh->combat_buff_idx];
         buff.next_fade = hit_aura.next_fade; // for correct uptime bookkeeping
-        do_fade_buff(buff, logger);
+        do_fade_buff(buff, logger, current_time);
 
         hit_aura.next_fade = Hit_aura::inactive;
     }
@@ -387,7 +387,7 @@ void Buff_manager::increment_use_effects(int current_time, Time_keeper& time_kee
 }
 
 
-void Buff_manager::do_fade_buff(Combat_buff& buff, Logger& logger)
+void Buff_manager::do_fade_buff(Combat_buff& buff, Logger& logger, int current_time)
 {
     const auto& ssb = buff.special_stats_boost;
     for (int i = 0; i < buff.stacks; i++)
@@ -404,10 +404,27 @@ void Buff_manager::do_fade_buff(Combat_buff& buff, Logger& logger)
     {
         rage_manager->swap_stance();
     }
+    if (buff.name == "blackened_naaru_sliver_active")
+    {
+        force_fade_aura_by_name("blackened_naaru_sliver_stacks", logger, current_time);
+    }
 
     buff.uptime += buff.next_fade - (buff.last_gain > 0 ? buff.last_gain : 0);
 
     logger.print(buff.name, " fades.");
+}
+
+void Buff_manager::force_fade_aura_by_name(const std::string& name, Logger& logger, int current_time)
+{
+    //find the aura with matching name
+    for (auto& buff : combat_buffs)
+    {
+        if (buff.name == name)
+        {
+            //force a fade on the next tick
+            do_fade_buff(buff, logger, current_time);
+        }
+    }
 }
 
 void Buff_manager::gain_stats(const Special_stats& ssb)

@@ -143,7 +143,8 @@ private:
     void increment_hit_auras(int current_time, Logger& logger);
     void increment_use_effects(int current_time, Time_keeper& time_keeper, Logger& logger);
 
-    void do_fade_buff(Combat_buff& buff, Logger& logger);
+    void do_fade_buff(Combat_buff& buff, Logger& logger, int current_time);
+    void force_fade_aura_by_name(const std::string& name, Logger& logger, int current_time);
 
     void gain_stats(const Special_stats& ssb);
     void do_add_combat_buff(Hit_effect& hit_effect, int current_time);

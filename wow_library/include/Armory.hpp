@@ -794,7 +794,7 @@ struct Armory
                 {"berserkers_call", Attributes{0, 0}, Special_stats{0, 0, 90}, Socket::trinket, Set::none, {}, {{"berserkers_call", Use_effect::Effect_socket::shared, {0,  0}, {0, 0, 360}, 0, 20, 120, true}}},
 
                 // Phase 5
-                //{"blackened_naaru_sliver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.03424223208623969}, Socket::trinket}, 
+                {"blackened_naaru_sliver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.03424223208623969}, Socket::trinket, Set::none, {{"blackened_naaru_sliver", Hit_effect::Type::blackened_naaru_sliver, {}, {}, 0, 20, 45, .1}}}, 
                 {"shard_of_contempt", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 11.160431198478124}, Socket::trinket, Set::none, {{"shard_of_contempt", Hit_effect::Type::stat_boost, {}, {0.0, 0.0, 230}, 0, 20, 45, .1}}}, 
                 {"steely_naaru_sliver", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 13.696892834495879}, Socket::trinket}, 
 

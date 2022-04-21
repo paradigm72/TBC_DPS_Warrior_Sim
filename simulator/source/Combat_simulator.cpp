@@ -475,7 +475,7 @@ void Combat_simulator::bloodthirst(Sim_state& state)
         return;
     }
     logger_.print("Bloodthirst!");
-    // logger_.print("(DEBUG) AP: ", special_stats.attack_power);
+    logger_.print("(DEBUG) AP: ", state.special_stats.attack_power);
     double damage = (state.special_stats.attack_power * 0.45 + state.special_stats.bonus_damage) * (100 + 5 * has_onslaught_4_set_) / 100;
     const auto& hit_outcome = generate_hit(state, state.main_hand_weapon, hit_table_yellow_mh_, damage);
     if (hit_outcome.hit_result == Hit_result::miss || hit_outcome.hit_result == Hit_result::dodge)
@@ -763,6 +763,21 @@ void Combat_simulator::hit_effects(Sim_state& state, Hit_result hit_result, Weap
             if (special_type != Special_type::ms_bt) break;
             on_proc(hit_effect, "PROC: ", hit_effect.name, " stats increased for ", hit_effect.duration * 0.001, "s");
             buff_manager_.add_combat_buff(hit_effect, time_keeper_.time);
+            break;
+        }
+        case Hit_effect::Type::blackened_naaru_sliver: {
+            on_proc(hit_effect, "PROC: ", hit_effect.name, " buff active for ", hit_effect.duration * 0.001, "s");
+            //activate the buff that will add one stack on each subsequent hit (20s duration, no cooldown, 100% chance, max charges 10)
+            Hit_effect bnsa_hit_effect("blackened_naaru_sliver_active", Hit_effect::Type::blackened_naaru_sliver_active, {}, {}, 0, 20, 0, 1);
+            buff_manager_.add_combat_buff(bnsa_hit_effect, time_keeper_.time);
+            buff_manager_.add_hit_aura(bnsa_hit_effect.name, bnsa_hit_effect, bnsa_hit_effect.duration, time_keeper_.time);
+            break;
+        }
+        case Hit_effect::Type::blackened_naaru_sliver_active: {
+            on_proc(hit_effect, "PROC: Blackened Naaru Sliver stack gained, AP: ", state.special_stats.attack_power);
+            //add one 44 AP stack of blackened_naaru_sliver, with 20s duration (all stacks will be dropped early when blackened_naaru_sliver_active fades)
+            Hit_effect bnss_hit_effect("blackened_naaru_sliver_stacks", Hit_effect::Type::stat_boost, {}, {0, 0, 44}, 0, 20, 0, 0, 0, 1, 0, 10);
+            buff_manager_.add_combat_buff(bnss_hit_effect, time_keeper_.time);
             break;
         }
         default:
@@ -1806,8 +1821,11 @@ std::vector<std::string> Combat_simulator::get_aura_uptimes() const
     double total_sim_time = config.n_batches * config.sim_time;
     for (const auto& aura : buff_manager_.get_aura_uptimes_map())
     {
-        double uptime = aura.second / total_sim_time;
-        aura_uptimes.emplace_back(aura.first + " " + std::to_string(100 * uptime));
+        if (!(filter_aura_from_statistics(aura.first)))
+        {
+            double uptime = aura.second / total_sim_time;
+            aura_uptimes.emplace_back(aura.first + " " + std::to_string(100 * uptime));    
+        }        
     }
     if (flurry_uptime_ != 0.0)
     {
@@ -1824,15 +1842,40 @@ std::vector<std::string> Combat_simulator::get_aura_uptimes() const
     return aura_uptimes;
 }
 
+bool Combat_simulator::filter_aura_from_statistics(std::string aura_name) const
+{
+    if (aura_name == "blackened_naaru_sliver_active")
+    {
+        return true;
+    }
+    return false;           
+}
+
 std::vector<std::string> Combat_simulator::get_proc_statistics() const
 {
     std::vector<std::string> proc_counter;
     for (const auto& proc : proc_data_)
     {
-        double counter = static_cast<double>(proc.second) / config.n_batches;
-        proc_counter.emplace_back(proc.first + " " + std::to_string(counter));
+        if (!(filter_proc_from_statistics(proc.first)))
+        {
+            double counter = static_cast<double>(proc.second) / config.n_batches;
+            proc_counter.emplace_back(proc.first + " " + std::to_string(counter));
+        }        
     }
     return proc_counter;
+}
+
+bool Combat_simulator::filter_proc_from_statistics(std::string proc_name) const
+{
+    if (proc_name == "blackened_naaru_sliver_active")
+    {
+            return true;
+    }
+    if (proc_name == "blackened_naaru_sliver_stacks")
+    {
+            return true;
+    }
+    return false;           
 }
 
 void Combat_simulator::reset_time_lapse()
