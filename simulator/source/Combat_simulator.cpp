@@ -475,7 +475,7 @@ void Combat_simulator::bloodthirst(Sim_state& state)
         return;
     }
     logger_.print("Bloodthirst!");
-    logger_.print("(DEBUG) AP: ", state.special_stats.attack_power);
+    //logger_.print("(DEBUG) AP: ", state.special_stats.attack_power);
     double damage = (state.special_stats.attack_power * 0.45 + state.special_stats.bonus_damage) * (100 + 5 * has_onslaught_4_set_) / 100;
     const auto& hit_outcome = generate_hit(state, state.main_hand_weapon, hit_table_yellow_mh_, damage);
     if (hit_outcome.hit_result == Hit_result::miss || hit_outcome.hit_result == Hit_result::dodge)
@@ -774,7 +774,7 @@ void Combat_simulator::hit_effects(Sim_state& state, Hit_result hit_result, Weap
             break;
         }
         case Hit_effect::Type::blackened_naaru_sliver_active: {
-            on_proc(hit_effect, "PROC: Blackened Naaru Sliver stack gained, AP: ", state.special_stats.attack_power);
+            on_proc(hit_effect, "PROC: Blackened Naaru Sliver stack gained");
             //add one 44 AP stack of blackened_naaru_sliver, with 20s duration (all stacks will be dropped early when blackened_naaru_sliver_active fades)
             Hit_effect bnss_hit_effect("blackened_naaru_sliver_stacks", Hit_effect::Type::stat_boost, {}, {0, 0, 44}, 0, 20, 0, 0, 0, 1, 0, 10);
             buff_manager_.add_combat_buff(bnss_hit_effect, time_keeper_.time);
