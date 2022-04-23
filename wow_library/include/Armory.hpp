@@ -629,6 +629,7 @@ struct Armory
                 {"legguards_of_endless_rage", Attributes{70.0, 0.0}, Special_stats{2.0833333333333335, 1.2048192771084338, 0.0, 0, 0.0}, Socket::legs}, 
                 {"onslaught_greaves", Attributes{62.0, 41.0}, Special_stats{0.0, 0.8877615726062144, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 105}, Socket::legs, Set::onslaught}, 
                 {"vengeful_gladiators_plate_legguards", Attributes{51.0, 0.0}, Special_stats{2.1286231884057973, 0.7609384908053266, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 84}, Socket::legs}, 
+                {"legplates_of_undending_fury", Attributes{52.0, 0.0}, Special_stats{0.0, 1.585288523, 0.0, 0, 0.02726696259}, Socket::legs}, 
             
                 // Phase 4
                 {"bloodthirsters_wargreaves", Attributes{46.0, 0.0}, Special_stats{0.0, 2.41, 0.0, 0, 0.0}, Socket::legs},
