@@ -91,18 +91,21 @@ struct Buffs
 
 struct Gems
 {
+    Gem strength_2{"strength_2", Attributes {2, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_3{"strength_3", Attributes {3, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_4{"strength_4", Attributes {4, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_5{"strength_5", Attributes {5, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_6{"strength_6", Attributes {6, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_8{"strength_8", Attributes {8, 0}, Special_stats{0.0, 0.0, 0.0}};
     Gem strength_10{"strength_10", Attributes {10, 0}, Special_stats{0.0, 0.0, 0.0}};
+    Gem agility_2{"agility_2", Attributes {0, 2}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_3{"agility_3", Attributes {0, 3}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_4{"agility_4", Attributes {0, 4}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_5{"agility_5", Attributes {0, 5}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_6{"agility_6", Attributes {0, 6}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_8{"agility_8", Attributes {0, 8}, Special_stats{0.0, 0.0, 0.0}};
     Gem agility_10{"agility_10", Attributes {0, 10}, Special_stats{0.0, 0.0, 0.0}};
+    Gem crit_2{"crit_2", Attributes {0, 0}, Special_stats {0.09057971014, 0.0, 0.0}};
     Gem crit_3{"crit_3", Attributes {0, 0}, Special_stats {0.1358695652, 0.0, 0.0}};
     Gem crit_4{"crit_4", Attributes {0, 0}, Special_stats {0.1811594203, 0.0, 0.0}};
     Gem crit_5{"crit_5", Attributes {0, 0}, Special_stats {0.2264492754, 0.0, 0.0}};
@@ -110,6 +113,7 @@ struct Gems
     Gem crit_8{"crit_8", Attributes {0, 0}, Special_stats {0.3623188406, 0.0, 0.0}};
     Gem crit_10{"crit_10", Attributes {0, 0}, Special_stats {0.4528985507, 0.0, 0.0}};
     Gem crit_12{"crit_12", Attributes {0, 0}, Special_stats {0.5434782609, 0.0, 0.0}};
+    Gem hit_2{"hit_2", Attributes {0, 0}, Special_stats {0.0, 0.1268230818, 0.0}};
     Gem hit_4{"hit_4", Attributes {0, 0}, Special_stats {0.0, 0.2536461636, 0.0}};
     Gem hit_6{"hit_6", Attributes {0, 0}, Special_stats {0.0, 0.3804692454, 0.0}};
     Gem hit_8{"hit_8", Attributes {0, 0}, Special_stats {0.0, 0.5072923272, 0.0}};
@@ -117,6 +121,7 @@ struct Gems
     Gem hit_12{"hit_12", Attributes {0, 0}, Special_stats {0.0, 0.7609384908, 0.0}};
     Gem ap_20{"ap_20", Attributes {0, 0}, Special_stats {0.0, 0.0, 20}};
     Gem ap_24{"ap_24", Attributes {0, 0}, Special_stats {0.0, 0.0, 24}};
+    Gem ap_32{"ap_32", Attributes {0, 0}, Special_stats {0.0, 0.0, 32}};
     Gem dmg_3{"dmg_3", Attributes {0, 0}, Special_stats {0.0, 0.0, 0.0, 0, 0, 0, 0, 3}};
     Gem crit_3_str_3{"crit_3_str_3", Attributes {3, 0}, Special_stats {0.1358695652, 0.0, 0.0}};
     Gem crit_4_str_4{"crit_4_str_4", Attributes {4, 0}, Special_stats {0.1811594203, 0.0, 0.0}};
