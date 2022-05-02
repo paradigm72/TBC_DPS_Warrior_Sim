@@ -6,7 +6,7 @@ let item_with_gems = ["helmet_dd", "neck_dd", "shoulder_dd", "back_dd",
 let gems = ["helmet_gem1_dd", "helmet_gem2_dd", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "shoulder_gem1_dd", "shoulder_gem2_dd", "shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
 "chest_gem1_dd", "chest_gem2_dd", "chest_gem3_dd", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "wrists_gem1_dd", "wrists_gem2_dd", "wrists_gem3_dd", "belt_gem1_dd", "belt_gem2_dd", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
 "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-"ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+"ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
 let gem_option = {meta: ["meta", "+3 dmg", "+12 crit", "agi critDmg", "haste proc",
                         "none"], 
                   red: ["red", "+4 strength", "+6 strength", "+8 strength", "+4 agility", "+6 agility", "+10 agility", "+20 AP", "+24 AP",
