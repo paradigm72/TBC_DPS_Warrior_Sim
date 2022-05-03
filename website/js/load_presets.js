@@ -108,7 +108,7 @@ function load_naxxgear() {
     let selected_gems = ["helmet_gem1_dd", "helmet_gem2_dd", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "shoulder_gem1_dd", "shoulder_gem2_dd", "shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "chest_gem1_dd", "chest_gem2_dd", "chest_gem3_dd", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "wrists_gem1_dd", "wrists_gem2_dd", "wrists_gem3_dd", "belt_gem1_dd", "belt_gem2_dd", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
 }
 
@@ -124,7 +124,7 @@ function load_preraidbis() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+8 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "chest_gem1_dd", "chest_gem2_dd", "chest_gem3_dd", "+4 crit_+4_str", "+4 crit_+4_str", "+4 crit", "wrists_gem1_dd", "wrists_gem2_dd", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
 }
 
@@ -140,7 +140,7 @@ function load_p1armsbis() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+4 crit", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -159,7 +159,7 @@ function load_p1furybis() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+4 crit", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
     unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -178,7 +178,7 @@ function load_p2armsbisplate() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+8 crit", "+4 crit_+4_str", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "+8 crit", "+8 crit", "+8 crit", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -197,7 +197,7 @@ function load_p2armsbisleather() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "shoulder_gem2_dd", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "+8 crit", "+8 crit", "+8 crit", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -216,7 +216,7 @@ function load_p2furybisplate() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+4 crit_+4_str", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
     unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -235,7 +235,7 @@ function load_p2furybisleather() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+4 crit_+4_str", "shoulder_gem2_dd","shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
     unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -254,7 +254,7 @@ function load_p3armsDW() {
     let selected_gems = ["+10 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+10 crit", "+5 crit","shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "+5 crit_+5_str", "+5 crit", "+5 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+10 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+10 crit", "+10 crit", "belt_gem3_dd", "+5 crit_+5_str", "+5 crit_+5_str", "hands_gem3_dd", 
     "+10 crit", "+10 crit", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_arms();
     unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -273,7 +273,7 @@ function load_p3arms2H() {
     let selected_gems = ["+10 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+10 crit", "+5 crit","shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "+5 crit_+5_str", "+5 crit", "+5 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+10 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+10 crit", "+10 crit", "belt_gem3_dd", "+5 crit_+5_str", "hands_gem2_dd", "hands_gem3_dd", 
     "+10 crit", "+10 crit", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -292,7 +292,7 @@ function load_p3arms2HNo4Set() {
     let selected_gems = ["+10 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+10 crit", "+5 crit","shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "+5 crit_+5_str", "+5 crit", "+5 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+10 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+10 crit", "+10 crit", "belt_gem3_dd", "+5 crit_+5_str", "+5 crit_+5_str", "hands_gem3_dd", 
     "+10 crit", "+10 crit", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
     unique_checkboxes('two_hand_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -311,7 +311,7 @@ function load_p3fury() {
     let selected_gems = ["+10 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+10 crit", "+5 crit","shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "+5 crit_+5_str", "+5 crit", "+5 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+10 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+10 crit", "+10 crit", "belt_gem3_dd", "+5 crit_+5_str", "+5 crit_+5_str", "hands_gem3_dd", 
     "+10 crit", "+10 crit", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_single(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
     unique_checkboxes('dual_wield_mode', ['dual_wield_mode', 'two_hand_mode']);
@@ -330,7 +330,7 @@ function load_naxxgearmult() {
     let selected_gems = ["helmet_gem1_dd", "helmet_gem2_dd", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "shoulder_gem1_dd", "shoulder_gem2_dd", "shoulder_gem3_dd", "back_gem1_dd", "back_gem2_dd", "back_gem3_dd",
     "chest_gem1_dd", "chest_gem2_dd", "chest_gem3_dd", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "wrists_gem1_dd", "wrists_gem2_dd", "wrists_gem3_dd", "belt_gem1_dd", "belt_gem2_dd", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
 }
 
@@ -346,7 +346,7 @@ function load_preraidbismult() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+8 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "chest_gem1_dd", "chest_gem2_dd", "chest_gem3_dd", "+4 crit_+4_str", "+4 crit_+4_str", "+4 crit", "wrists_gem1_dd", "wrists_gem2_dd", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
 }
 
@@ -362,7 +362,7 @@ function load_p1armsbismult() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+4 crit", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
 }
@@ -379,7 +379,7 @@ function load_p1furybismult() {
     let selected_gems = ["+8 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+8 crit", "+4 crit", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+4 crit_+4_str", "+4 crit", "belt_gem3_dd", "+8 crit", "+4 crit_+4_str", "hands_gem3_dd", 
     "+8 crit", "+4 crit_+4_str", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
 }
@@ -396,7 +396,7 @@ function load_p2armsbisplatemult() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+8 crit", "+4 crit_+4_str", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "+8 crit", "+8 crit", "+8 crit", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
 }
@@ -413,7 +413,7 @@ function load_p2armsbisleathermult() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "shoulder_gem2_dd", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "+8 crit", "+8 crit", "+8 crit", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_standard_arms();
 }
@@ -430,7 +430,7 @@ function load_p2furybisplatemult() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+8 crit", "+4 crit_+4_str", "shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+4 crit", "+8 crit", "+4 crit_+4_str", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "+4 crit_+4_str", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
 }
@@ -447,7 +447,7 @@ function load_p2furybisleathermult() {
     let selected_gems = ["+4 crit", "agi critDmg", "helmet_gem3_dd", "neck_gem1_dd", "neck_gem2_dd", "neck_gem3_dd", "+4 crit_+4_str", "shoulder_gem2_dd","shoulder_gem3_dd", "+4 crit_+4_str", "back_gem2_dd", "back_gem3_dd",
     "+8 crit", "+8 crit", "+8 crit", "legs_gem1_dd", "legs_gem2_dd", "legs_gem3_dd", "+4 crit", "wrists_gem2_dd", "wrists_gem3_dd", "+8 crit", "+8 crit", "belt_gem3_dd", "hands_gem1_dd", "hands_gem2_dd", "hands_gem3_dd", 
     "boots_gem1_dd", "boots_gem2_dd", "boots_gem3_dd",  "main_hand_gem1_dd", "main_hand_gem2_dd", "main_hand_gem3_dd", "off_hand_gem1_dd", "off_hand_gem2_dd", "off_hand_gem3_dd", 
-    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd"];
+    "ranged_gem1_dd", "ranged_gem2_dd", "ranged_gem3_dd", "bonus_gem1_dd", "bonus_gem2_dd", "bonus_gem3_dd"];
     select_loadout_mult(selected_items, selected_weapons, selected_enchants, selected_gems);
     load_talent_dual_wield_fury();
 }
