@@ -279,6 +279,7 @@ struct Armory
                 {"shoulders_of_lighting_reflexes", Attributes{0.0, 27.0}, Special_stats{0.0, 0.0, 74.0, 0, 0.023462270133164237}, Socket::shoulder}, 
                 {"swiftsteel_shoulders", Attributes{47.0, 0.0}, Special_stats{0.0, 1.2048192771084338, 0.0, 0, 0.02219403931515536}, Socket::shoulder}, 
                 {"onslaught_shoulderblades", Attributes{39.0, 39.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 91}, Socket::shoulder, Set::onslaught}, 
+                {"vengeful_gladiators_plate_shoulders", Attributes{33.0, 0.0}, Special_stats{1.358695652, 0.0, 0.0, 0, 0.0}, Socket::shoulder}, 
             
                 // Phase 4
                 {"pauldrons_of_gruesome_fate", Attributes{42.0, 0.0}, Special_stats{0.0, 1.46, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 154}, Socket::shoulder}, 
