@@ -700,6 +700,7 @@ struct Armory
                 // Phase 5
                 {"onslaught_treads", Attributes{44, 0.0}, Special_stats{1.6304347826086958, 1.585288522511097, 0.0, 0, 0.019023462270133164}, Socket::boots, Set::onslaught}, 
                 {"guardians_plate_greaves", Attributes{40.0, 0.0}, Special_stats{1.809954751131222, 0.0, 0.0}, Socket::boots},
+                {"sunstrider_warboots", Attributes{29.0, 0.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 140}, Socket::boots},
             };
 
     std::vector<Armor> ring_t
