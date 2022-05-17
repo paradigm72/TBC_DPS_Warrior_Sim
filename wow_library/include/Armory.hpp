@@ -855,6 +855,7 @@ struct Armory
                 {"blade_of_lifes_inevitability", Attributes{0.0, 0.0}, Special_stats{0.0, 0.0, 36, 0, 0.010145846544071023}, Socket::ranged}, 
                 {"crossbow_of_relentless_strikes", Attributes{0.0, 0.0}, Special_stats{0.8152173913043479, 0.8877615726062144, 32, 0, 0.0}, Socket::ranged}, 
                 {"nightstrike", Attributes{0.0, 0.0}, Special_stats{0.0, 0.634115409, 0, 0, 0.0, 0, 0, 0, 0, 0, 2.536461636}, Socket::ranged}, 
+                {"distracting_blades", Attributes{0.0, 14.0}, Special_stats{0.0, 0.0, 26, 0, 0.00634115409}, Socket::ranged}, 
             };
 
     std::vector<Armor> none_t {};
