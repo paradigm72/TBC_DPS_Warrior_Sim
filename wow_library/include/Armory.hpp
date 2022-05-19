@@ -404,6 +404,7 @@ struct Armory
                 {"harness_of_carnal_instinct", Attributes{52.0, 44.0}, Special_stats{0.0, 0.0, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 196}, Socket::chest}, 
                 {"vicious_hawkstrider_hauberk", Attributes{0.0, 47.0}, Special_stats{0.0, 0.0, 104.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 182}, Socket::chest},
                 {"brutal_gladiators_plate_chestpiece", Attributes{45.0, 0.0}, Special_stats{2.036199095022624, 1.139240506329114, 0.0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 84}, Socket::chest}, 
+                {"netherforce_chestplate", Attributes{44.0, 0.0}, Special_stats{1.358695652, 1.141407736, 0.0}, Socket::chest}, 
             };
 
     std::vector<Armor> wrists_t
