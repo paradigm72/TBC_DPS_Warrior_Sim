@@ -584,7 +584,7 @@ struct Armory
                 // Phase 5
                 {"onslaught_belt", Attributes{43, 0.0}, Special_stats{1.8115942028985508, 0.0, 0.0, 0, 0.016487000634115410, 0, 0, 0, 0, 0, 0, 6.594800253646164}, Socket::belt, Set::onslaught}, 
                 {"guardians_plate_belt", Attributes{40.0, 0.0}, Special_stats{1.809954751131222, 0.0, 0.0, 0, 0.0}, Socket::belt}, 
-                {"belt_of_the_silent_path", Attributes{0.0, 34.0}, Special_stats{1.458465441, 0.0, 78.0, 0, 0.0}, Socket::belt},            
+                {"belt_of_the_silent_path", Attributes{0.0, 34.0}, Special_stats{0.0, 1.458465441, 78.0, 0, 0.0}, Socket::belt},            
             };
 
     std::vector<Armor> legs_t
